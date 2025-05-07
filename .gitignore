@@ -1,0 +1,6 @@
+
+*.gem
+
+build/
+dist/
+*.egg-info/
