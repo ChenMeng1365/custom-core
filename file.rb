@@ -121,8 +121,8 @@ class Hash
   alias :"find?" :find_path
 end
 
-load('json.rb') # require 'json'
-load('yaml.rb') # require 'yaml'
+# load('json.rb') # require 'json'
+# load('yaml.rb') # require 'yaml'
 
 class File
   def self.load_json filepath

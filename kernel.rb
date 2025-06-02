@@ -76,7 +76,11 @@ module Kernel
     elsif File.exist?(script_path+'.rb')
       require_relative script_path+'.rb'
     else
-      warn "无法找到路径: #{script_path}"
+      begin
+        require script_path
+      rescue
+        warn "无法找到路径: #{script_path}"
+      end
     end
   end
 
@@ -94,7 +98,11 @@ module Kernel
     elsif File.exist?(script_path+'.rb')
       load script_path+'.rb'
     else
-      warn "无法找到路径: #{script_path}"
+      begin
+        load (script_path[-3..-1]=='.rb' ? script_path : script_path+'.rb')
+      rescue
+        warn "无法找到路径: #{script_path}"
+      end
     end
   end
 
