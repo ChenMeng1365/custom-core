@@ -41,3 +41,5 @@ module CC
     select(*args)
   end
 end
+
+CC.use 'kernel','chrono'

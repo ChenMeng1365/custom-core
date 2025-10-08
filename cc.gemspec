@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "cc"
-  spec.version       = '1.1.1'
+  spec.version       = '1.1.2'
   spec.authors       = ["Matt"]
   spec.email         = ["matthrewchains@gmail.com","18995691365@189.cn"]
   spec.license       = "MIT"
