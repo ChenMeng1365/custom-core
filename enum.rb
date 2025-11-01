@@ -45,3 +45,33 @@ module Enumerable
   alias :unfold_head :add_head
   alias :unfold_tail :add_tail
 end
+
+class Hash
+  def project *keys
+    new_proj = {}
+    keys.each do|key| new_proj[key] = self[key] end
+    return new_proj
+  end
+
+  def serialize *keys
+    return keys.map{|key|self[key]}
+  end
+end
+
+class Array
+  def mapping keys=[]
+    head = keys.empty? ? self[0] : keys
+    return nil unless head.instance_of?(Array)
+    new_records = []
+    self.each do|items|
+      return nil unless items.instance_of?(Array)
+      new_map = {}
+      next if items == keys
+      head.each_with_index do|field,index|
+        new_map[field] = items[index]
+      end
+      new_records << new_map
+    end
+    return new_records
+  end
+end
