@@ -13,7 +13,8 @@ $modlist = [
   'number',
   'regexp',
   'string',
-  'tree'
+  'tree',
+  'logic'
 ]
 
 module CC
