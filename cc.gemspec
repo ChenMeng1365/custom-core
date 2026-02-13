@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "cc"
-  spec.version       = '1.1.5'
+  spec.version       = '1.2.0'
   spec.authors       = ["Matt"]
   spec.email         = ["matthrewchains@gmail.com","18995691365@189.cn"]
   spec.license       = "MIT"
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
     'file',
     'kernel',
     'monkey-patch',
+    'shell-tools',
     'number',
     'regexp',
     'string',

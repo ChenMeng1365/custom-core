@@ -10,6 +10,7 @@ $modlist = [
   'file',
   'kernel',
   'monkey-patch',
+  'shell-tools',
   'number',
   'regexp',
   'string',
