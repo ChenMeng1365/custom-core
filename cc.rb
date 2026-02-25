@@ -15,6 +15,7 @@ $modlist = [
   'regexp',
   'string',
   'tree',
+  'trace',
   'logic'
 ]
 

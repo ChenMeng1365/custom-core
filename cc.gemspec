@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "cc"
-  spec.version       = '1.2.0'
+  spec.version       = '1.2.1'
   spec.authors       = ["Matt"]
   spec.email         = ["matthrewchains@gmail.com","18995691365@189.cn"]
   spec.license       = "MIT"
@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
     'regexp',
     'string',
     'tree',
+    'trace',
     'logic'
   ].map{|file|"#{file}.rb"} + ["README.md", "LICENSE", "LICENSE-CN.md"]
 
